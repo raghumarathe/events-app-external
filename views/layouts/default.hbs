@@ -16,17 +16,18 @@
         <h1 style="text-align: center">Welcome to CloudForce application</h1>
         <span title="woohoo doing things :)">Move your mouse over me!</span>
         <marquee>I wanna scroll with it, baby!</marquee>
+        <div class='container' style='margin-bottom: 25px;'>
+            <h2>Add an event</h2>
+            <form action="/event" class='card card-body' method="post">
+                title: <input style="border-radius: 5px;" name="title" type="text" /> <br />
+                description: <input style='border-radius: 5px;' name="description" type="text" /> <br />
+                <br />
+                <input type="submit" class='btn btn-info' name="submit" value="submit" />
+            </form>
+        </div>
         {{{body}}}
     </div>
-    <div class='container'>
-        <h2>Add an event</h2>
-        <form action="/event" method="post">
-            title: <input name="title" type="text" /> <br />
-            description: <input name="description" type="text" /> <br />
-            <br />
-            <input type="submit" class='btn btn-info' name="submit" value="submit" />
-        </form>
-    </div>
+
 </body>
 
 </html>
