@@ -1,8 +1,12 @@
-<ul >
-  {{#events}}
-    <li>
-        <h2>{{ title }}</h2>
-        <p>{{ description }}</p>
-    </li>
-  {{/events}}
-</ul>
+<div>
+    {{#events}}
+    <div class="card" style="width: 18rem; margin-bottom: 15px;">
+        <div class="card-header">
+            {{title}}
+        </div>
+        <div class="card-body">
+            <p>{{description}}</p>
+        </div>
+    </div>
+    {{/events}}
+</div>
